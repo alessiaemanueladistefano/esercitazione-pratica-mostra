@@ -1,0 +1,415 @@
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+}
+img{
+    max-width: 100%;
+}
+
+header{
+    background-color: black;
+    color: white;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+header p {
+    margin: 0%;
+   
+}
+
+header nav ul {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    display: flex;
+    gap: 90px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    text-decoration: underline;
+    }
+
+header nav a {
+    color: #8a8a8a;
+
+}
+
+
+header nav a:hover {
+color: white;
+}
+
+section.titolo {
+    padding: 40px;
+}
+section.titolo h1 {
+    margin: 0%;
+    font-weight: normal;
+    text-align: center;
+    font-size: 50px;
+    padding: 0 0 25px 0 ;
+}
+
+section.titolo h2 {
+    margin: 0%;
+    font-weight: normal;
+    text-align: center;
+    font-size: 30px;
+    padding: 0 0 40px 0 ;
+}
+
+section.data {
+    margin: 0%;
+    font-size: 18px;
+    padding: 0 0 30px 200px;
+}
+
+section.data h4 {
+    text-align: left;
+    font-weight: normal;
+}
+
+section.testohome {
+   max-width: 700px;
+   margin: auto;
+}
+
+section.testohome p {
+    margin: 0%;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    
+}
+
+section.artistiinmostra h4 {
+    text-align: center;
+    font-weight: normal;
+    padding: 100px 0 0 0 ;
+    font-size: 30px;
+
+}
+
+section.card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) );
+    max-width: 1100px;
+    margin: 48px auto;
+    gap: 43px;
+    padding: 48px 16px ;
+
+}
+
+section.card h4{
+    margin: 0%;
+    padding: 0%;
+}
+
+section.card h4{
+    font-size: 20px;
+    font-weight: normal;
+    padding: 8px;
+    text-align: center;
+}
+
+section.card img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0% 0%;
+}
+
+section.card div{
+    background-color: #646464;
+    color: white;
+    border-radius: 8px;
+}
+
+section.card div a {
+    text-decoration: none;
+    color: white;
+}
+
+section.card div a:hover {
+    text-decoration: underline;
+    }
+
+footer ul {
+    margin: 0%;
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    gap: 90px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(130, 130, 130);
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: black;
+    }
+
+footer{
+    margin: 48px auto;
+    border-top: solid #ccc;
+}    
+
+section.testomostra {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto 64px auto;
+    padding: 0 32px;
+}
+
+section.testomostra div:nth-child(1) {
+    width: 30%;
+} 
+
+section.testomostra div:nth-child(2) {
+    width: 70%;
+} 
+
+
+section.testomostra h1{
+    margin: 0%;
+    font-weight: normal;
+    font-size: 25px;
+
+}
+
+section.testomostra p {
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    
+}
+
+
+
+section.info {
+    max-width: 1110px;
+    display: flex;
+    gap: 100px;
+}
+
+
+section.info img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px ;
+}
+
+
+
+section.cardartista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) );
+    max-width: 1100px;
+    margin: 48px auto;
+    gap: 43px;
+    padding: 48px 16px ;
+
+}
+
+
+section.infomostra{
+    max-width: 1110px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 32px;
+    gap: 40px;
+    padding: 30px;
+}
+
+section.infomostra div:nth-child(1) {
+    width: 30%;
+} 
+
+section.infomostra div:nth-child(2) {
+    width: 70%;
+} 
+
+section.infomostra div {
+    width: 50%;
+}
+
+section.infomostra h1{
+    margin: 0%;
+    font-weight: normal;
+    font-size: 25px;
+    padding: 0 0 20px 0;
+
+}
+
+section.infomostra p {
+    margin: 0%;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+
+section.infomostra img{
+    width: 100%;
+    margin: 0%;
+
+   }
+
+   @media(max-width: 600px) {
+    /* PAGINA HOME*/
+
+
+    section.titolo h1 {
+        font-size: 35px;
+    }
+    section.titolo h2 {
+        font-size: 20px;
+    }
+
+    header{
+       flex-direction: column;
+       gap: 16px;
+    
+    }
+
+    section.card div {
+      display: flex;
+      flex-direction: row;
+      
+    }
+
+   section.card img{
+    height: 250px;
+    width: 250px;
+    border-radius: 8px 0 0 8px ;
+   }
+
+   section.card h4{
+    font-size: 15px;
+    text-align: left;
+}
+
+section.card div a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    
+  }
+
+  section.card div a {
+    text-decoration: none;
+    color: white;
+}
+
+section.card div a:hover {
+    text-decoration: underline;
+    }
+
+
+
+section.artistiinmostra h4 {
+    text-align: center;
+    font-weight: normal;
+    padding: 60px 0 10px 0 ;
+    font-size: 20px;
+
+}
+
+section.data {
+    margin: 0%;
+    font-size: 15px;
+    padding: 0 0 80px 90px;
+}
+
+section.testohome p { 
+    margin: 0%;
+    font-size: 16px;
+    padding: 30px 30px 0 30px;
+}
+
+/* PAGINA MOSTRA*/
+
+section.testomostra {
+    flex-direction: column;
+
+}
+
+section.testomostra div:nth-child(1) {
+    width: 100%;
+} 
+
+section.testomostra div:nth-child(2) {
+    width: 100%;
+} 
+section.testomostra h1{
+    font-size: 20px;
+    padding: 0 0 30px 0;
+
+}
+section.testomostra p{
+    font-size: 16px;
+}
+
+/* PAGINA ARTISTI*/
+section.cardartista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+ section.cardartista img{
+  height: 350px;
+  width: 350px;
+ }
+
+ /* PAGINA INFO*/
+
+ section.infomostra{
+    display: flex;
+    flex-direction: column;
+}
+section.infomostra h1{
+    font-size: 20px;
+    padding: 0 0 30px 0;
+
+}
+section.infomostra p{
+    margin: 0%;
+    font-size: 16px;
+    padding: 30px 30px 0 0px;
+}
+section.infomostra img{
+    height: 200px;
+    width: 200px;
+    margin: 0%;
+    padding: 0 0 20px 0;
+
+   }
+   
+   section.infomostra div:nth-child(1) {
+    width: 100%;
+} 
+
+section.infomostra div:nth-child(2) {
+    width: 100%;
+}    
+
+}
+
+
+
